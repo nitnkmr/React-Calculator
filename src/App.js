@@ -10,6 +10,7 @@ function App() {
   }
   function getResult(){
     setdisplay(eval(input))
+    
   }
   function resetsfunc(){
     setdisplay("")
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-      <Display display={display} />
+      <Display display={display} input={input} />
       <Buttons Calc={Calc} getResult={getResult} resetsfunc={resetsfunc}/>
       </div>
     </div>

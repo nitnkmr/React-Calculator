@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Display = ({display}) => {
+const Display = ({display,input}) => {
   return (
-    <div className='display'>{display}</div>
+    <div className='display'>
+    <div style={{fontSize:"small",color:"orange"}}>{input}</div>
+      <div>{display}</div>
+    </div>
   )
 }
 
